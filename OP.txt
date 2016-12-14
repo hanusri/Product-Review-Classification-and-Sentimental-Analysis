@@ -1,0 +1,850 @@
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['clothing', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'electronics', 'automotive', 'automotive', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.80
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'sad']
+Accuracy: 0.47
+╒═════════════╤════════════════╤══════════╕
+│ LABEL       │ PRECISION      │   RECALL │
+╞═════════════╪════════════════╪══════════╡
+│ happy       │ 0.444444444444 │     0.80 │
+├─────────────┼────────────────┼──────────┤
+│ sad         │ 0.5            │     0.60 │
+├─────────────┼────────────────┼──────────┤
+│ indifferent │ -              │     0.00 │
+╘═════════════╧════════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['clothing', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.80
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.60 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'happy', 'happy', 'sad', 'happy', 'happy', 'happy', 'sad']
+Accuracy: 0.47
+╒═════════════╤════════════════╤══════════╕
+│ LABEL       │ PRECISION      │   RECALL │
+╞═════════════╪════════════════╪══════════╡
+│ happy       │ 0.5            │     0.80 │
+├─────────────┼────────────────┼──────────┤
+│ sad         │ 0.428571428571 │     0.60 │
+├─────────────┼────────────────┼──────────┤
+│ indifferent │ -              │     0.00 │
+╘═════════════╧════════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 0 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'movies', 'electronics', 'movies', 'electronics', 'food', 'electronics']
+Accuracy: 0.40
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │ PRECISION   │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │ -           │     0.00 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │ -           │     0.00 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │ 0.25        │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │ 1.0         │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │ 1.0         │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'indifferent', 'sad', 'sad', 'sad', 'indifferent', 'sad', 'sad', 'sad', 'sad', 'happy', 'sad', 'sad']
+Accuracy: 0.53
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        1.00 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.45 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 0 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'movies', 'electronics', 'movies', 'electronics', 'food', 'electronics']
+Accuracy: 0.40
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │ PRECISION   │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │ -           │     0.00 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │ -           │     0.00 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │ 0.25        │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │ 1.0         │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │ 1.0         │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'indifferent', 'sad', 'sad', 'sad', 'indifferent', 'sad', 'sad', 'sad', 'sad', 'happy', 'sad', 'sad']
+Accuracy: 0.53
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        1.00 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.45 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 0 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'electronics', 'movies', 'electronics', 'movies', 'electronics', 'food', 'electronics']
+Accuracy: 0.40
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │ PRECISION   │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │ -           │     0.00 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │ -           │     0.00 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │ 0.25        │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │ 1.0         │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │ 1.0         │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'indifferent', 'sad', 'sad', 'sad', 'indifferent', 'sad', 'sad', 'sad', 'sad', 'happy', 'sad', 'sad']
+Accuracy: 0.53
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        1.00 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.45 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ 
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['automotive', 'electronics', 'electronics', 'clothing', 'clothing', 'electronics', 'clothing', 'automotive', 'automotive', 'movies', 'food', 'movies', 'food', 'electronics', 'electronics']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.40 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.50 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'indifferent', 'sad', 'happy', 'happy', 'happy', 'sad', 'happy', 'happy', 'indifferent', 'indifferent', 'happy']
+Accuracy: 0.40
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.29 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.40 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.67 │     0.40 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'electronics', 'automotive', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.73
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.60 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'happy', 'sad', 'happy', 'happy', 'happy', 'indifferent', 'happy', 'sad', 'happy', 'happy', 'sad']
+Accuracy: 0.47
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.38 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.67 │     0.80 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.00 │     0.00 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['clothing', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.80
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.60 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'happy', 'happy', 'sad', 'happy', 'happy', 'happy', 'sad']
+Accuracy: 0.47
+╒═════════════╤════════════════╤══════════╕
+│ LABEL       │ PRECISION      │   RECALL │
+╞═════════════╪════════════════╪══════════╡
+│ happy       │ 0.5            │     0.80 │
+├─────────────┼────────────────┼──────────┤
+│ sad         │ 0.428571428571 │     0.60 │
+├─────────────┼────────────────┼──────────┤
+│ indifferent │ -              │     0.00 │
+╘═════════════╧════════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['clothing', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'electronics', 'automotive', 'automotive', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.80
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'sad']
+Accuracy: 0.47
+╒═════════════╤════════════════╤══════════╕
+│ LABEL       │ PRECISION      │   RECALL │
+╞═════════════╪════════════════╪══════════╡
+│ happy       │ 0.444444444444 │     0.80 │
+├─────────────┼────────────────┼──────────┤
+│ sad         │ 0.5            │     0.60 │
+├─────────────┼────────────────┼──────────┤
+│ indifferent │ -              │     0.00 │
+╘═════════════╧════════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'food', 'food', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.67
+╒═════════════╤════════════════╤══════════╕
+│ LABEL       │ PRECISION      │   RECALL │
+╞═════════════╪════════════════╪══════════╡
+│ automotive  │ -              │     0.00 │
+├─────────────┼────────────────┼──────────┤
+│ clothing    │ 0.666666666667 │     0.67 │
+├─────────────┼────────────────┼──────────┤
+│ electronics │ 0.75           │     1.00 │
+├─────────────┼────────────────┼──────────┤
+│ food        │ 0.5            │     1.00 │
+├─────────────┼────────────────┼──────────┤
+│ movies      │ 1.0            │     0.67 │
+╘═════════════╧════════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'happy', 'happy', 'indifferent', 'happy', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.40
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.33 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.50 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.33 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'electronics', 'clothing', 'food', 'food', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │ PRECISION   │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │ -           │     0.00 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │ 0.5         │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │ 0.6         │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │ 0.5         │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │ 1.0         │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'sad', 'happy', 'happy', 'sad', 'indifferent', 'happy', 'indifferent']
+Accuracy: 0.47
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.50 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.57 │     0.80 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.00 │     0.00 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'electronics', 'clothing', 'food', 'automotive', 'movies', 'food', 'movies', 'food', 'electronics', 'food']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.50 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.50 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'sad', 'happy', 'sad', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.75 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.56 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'food', 'food', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.67
+╒═════════════╤════════════════╤══════════╕
+│ LABEL       │ PRECISION      │   RECALL │
+╞═════════════╪════════════════╪══════════╡
+│ automotive  │ -              │     0.00 │
+├─────────────┼────────────────┼──────────┤
+│ clothing    │ 0.666666666667 │     0.67 │
+├─────────────┼────────────────┼──────────┤
+│ electronics │ 0.75           │     1.00 │
+├─────────────┼────────────────┼──────────┤
+│ food        │ 0.5            │     1.00 │
+├─────────────┼────────────────┼──────────┤
+│ movies      │ 1.0            │     0.67 │
+╘═════════════╧════════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'happy', 'happy', 'indifferent', 'happy', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.40
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.33 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.50 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.33 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'electronics', 'clothing', 'food', 'food', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │ PRECISION   │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │ -           │     0.00 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │ 0.5         │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │ 0.6         │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │ 0.5         │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │ 1.0         │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'sad', 'happy', 'happy', 'sad', 'indifferent', 'happy', 'indifferent']
+Accuracy: 0.47
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.50 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.57 │     0.80 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.00 │     0.00 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'electronics', 'clothing', 'food', 'automotive', 'movies', 'electronics', 'movies', 'food', 'electronics', 'food']
+Accuracy: 0.67
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'sad', 'sad', 'sad', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.53
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.67 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'electronics', 'clothing', 'food', 'automotive', 'movies', 'electronics', 'movies', 'food', 'electronics', 'food']
+Accuracy: 0.67
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'sad', 'sad', 'sad', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.53
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.67 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'electronics', 'clothing', 'food', 'automotive', 'movies', 'food', 'movies', 'food', 'electronics', 'food']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.50 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.50 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'sad', 'happy', 'sad', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.75 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.56 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'food', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.73
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.60 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'happy', 'sad', 'happy', 'happy', 'indifferent', 'happy', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.33
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.20 │     0.20 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.43 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.33 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'electronics', 'automotive', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.73
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.60 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'happy', 'sad', 'happy', 'happy', 'happy', 'indifferent', 'happy', 'sad', 'happy', 'happy', 'sad']
+Accuracy: 0.47
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.38 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.67 │     0.80 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.00 │     0.00 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'electronics', 'clothing', 'food', 'automotive', 'movies', 'electronics', 'movies', 'food', 'electronics', 'food']
+Accuracy: 0.67
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'sad', 'sad', 'sad', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.53
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.67 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['clothing', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'electronics', 'automotive', 'automotive', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.80
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.75 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'sad']
+Accuracy: 0.47
+╒═════════════╤════════════════╤══════════╕
+│ LABEL       │ PRECISION      │   RECALL │
+╞═════════════╪════════════════╪══════════╡
+│ happy       │ 0.444444444444 │     0.80 │
+├─────────────┼────────────────┼──────────┤
+│ sad         │ 0.5            │     0.60 │
+├─────────────┼────────────────┼──────────┤
+│ indifferent │ -              │     0.00 │
+╘═════════════╧════════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['clothing', 'electronics', 'electronics', 'food', 'clothing', 'clothing', 'electronics', 'automotive', 'automotive', 'movies', 'food', 'movies', 'food', 'food', 'food']
+Accuracy: 0.73
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.60 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'happy', 'sad', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'happy', 'sad', 'sad']
+Accuracy: 0.47
+╒═════════════╤════════════════╤══════════╕
+│ LABEL       │ PRECISION      │   RECALL │
+╞═════════════╪════════════════╪══════════╡
+│ happy       │ 0.444444444444 │     0.80 │
+├─────────────┼────────────────┼──────────┤
+│ sad         │ 0.5            │     0.60 │
+├─────────────┼────────────────┼──────────┤
+│ indifferent │ -              │     0.00 │
+╘═════════════╧════════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'electronics', 'clothing', 'electronics', 'clothing', 'food', 'automotive', 'movies', 'food', 'movies', 'food', 'electronics', 'food']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.50 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.50 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'happy', 'sad', 'happy', 'sad', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.75 │     0.60 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.56 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['automotive', 'electronics', 'electronics', 'clothing', 'clothing', 'electronics', 'clothing', 'automotive', 'automotive', 'movies', 'food', 'movies', 'food', 'electronics', 'electronics']
+Accuracy: 0.60
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.40 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        0.50 │     0.33 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'indifferent', 'sad', 'happy', 'happy', 'happy', 'sad', 'happy', 'happy', 'indifferent', 'indifferent', 'happy']
+Accuracy: 0.40
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.29 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.40 │     0.40 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.67 │     0.40 │
+╘═════════════╧═════════════╧══════════╛
+giridar@giridar-xubuntu:~/workspace/NLP Project$ python Main.py 1 0
+Product Classification
+---------------------
+Test labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'clothing', 'automotive', 'automotive', 'automotive', 'movies', 'movies', 'movies', 'food', 'food', 'food']
+New labels: ['electronics', 'electronics', 'electronics', 'clothing', 'clothing', 'electronics', 'clothing', 'automotive', 'automotive', 'movies', 'electronics', 'movies', 'food', 'electronics', 'food']
+Accuracy: 0.73
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ automotive  │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ clothing    │        0.67 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ electronics │        0.50 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ food        │        1.00 │     0.67 │
+├─────────────┼─────────────┼──────────┤
+│ movies      │        1.00 │     0.67 │
+╘═════════════╧═════════════╧══════════╛
+
+Sentiment Analysis
+------------------
+Test labels: ['happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad', 'happy', 'indifferent', 'sad']
+New labels: ['happy', 'sad', 'sad', 'sad', 'sad', 'sad', 'sad', 'happy', 'sad', 'sad', 'sad', 'sad', 'indifferent', 'indifferent', 'sad']
+Accuracy: 0.47
+╒═════════════╤═════════════╤══════════╕
+│ LABEL       │   PRECISION │   RECALL │
+╞═════════════╪═════════════╪══════════╡
+│ happy       │        0.50 │     0.20 │
+├─────────────┼─────────────┼──────────┤
+│ sad         │        0.45 │     1.00 │
+├─────────────┼─────────────┼──────────┤
+│ indifferent │        0.50 │     0.20 │
+╘═════════════╧═════════════╧══════════╛
